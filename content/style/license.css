@@ -1,0 +1,144 @@
+﻿* {
+    padding: 0;
+    margin: 0;
+}
+a, strong {
+    color: rgb(117, 98, 23);
+    font-weight: bold;
+}
+body {
+    font: 13px/16px arial, verdana, sans-serif;
+
+    background-color: #f8f2e9;
+
+    margin-top: 30px;
+}
+blockquote {
+    background-color: #f8f2e9;
+
+    padding: 8px;
+}
+blockquote, li, ol, p, ul {
+    margin: 10px 20px;
+}
+details{
+    width: 700px;
+  
+    margin: auto;
+}
+details summary {
+    color: #9b1b2a;
+    font-size: 17px;
+    font-weight: bold;
+    text-align: left;
+    cursor: pointer;
+
+    padding: 43px 31px 15px 10px;
+    outline: none;
+}
+figcaption {
+    color: #3966d4;
+    font-size: 50px;
+    font-weight: bold;
+    text-align: left;
+    text-shadow: 1px 1px 3px #000;
+
+    display: inline-block;
+    margin-left: 5px;
+}
+figure {
+    width: 393px;
+
+    margin: 15px auto;
+    border-bottom: 1px solid #756526;
+}
+h1 {
+    font-size: 19px;
+    font-weight: bold;
+}
+h3 {
+    color: rgb(117, 98, 23);
+    font-size: 15px;
+
+    padding: 9px 0 14px 19px;
+}
+header {
+    height: 124px;
+    width: 750px;
+
+    position: relative;
+    top: 20px;
+
+    color: #3966d4;
+    text-align: center;
+    text-shadow: 1px 1px 3px #000;
+
+    background: url(../imgs/g.jpg);
+    padding-top: 20px;
+    margin: 13px auto;
+    box-shadow: 0 0 4px rgba(84, 11, 10, .8);
+}
+header img {
+    height: 60px;
+    width: 60px;
+}
+main {
+    width: 750px;
+
+    text-align: justify;
+    color: #333;
+
+    background-image: url(../imgs/p.jpg);
+    padding: 20px 0;
+    margin: 0 auto;
+}
+main img {
+    width: 700px;
+
+    position: relative;
+    top: 30px;
+}
+nav {
+    width: 750px;
+
+    background: #223f84;
+    padding: 20px 0;
+    margin: 0 auto 20px auto;
+    box-shadow: 0 0 4px rgba(84, 11, 10, .8);
+}
+nav a {
+    color: #bfa32f;
+    text-decoration: none;
+
+    margin: 0 20px;
+}
+nav a:hover{
+    color: #fff;
+}
+nav a:last-child {
+    float: right;
+}
+nav a:last-child:after {
+    content: '↑↑';
+}
+ol{
+    list-style: lower-alpha;
+}
+ol details {
+    width: 650px;
+}
+ol summary {
+    font-size: 14px;
+}
+.border {
+    margin: auto 25px;
+}
+.bracket {
+    quotes: '(' ')';
+}
+.double_quote {
+    quotes: '"' '"';
+}
+.roman {
+    list-style: lower-roman;
+}

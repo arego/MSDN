@@ -1,0 +1,757 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<link rel="icon" href="content/imgs/hyperlink.png" />
+	<link rel="stylesheet" href="content/style/hyperlinks.css" />
+	<title>Hyperlinks</title>
+</head>
+<body>
+	<header>
+		<ul class="back">
+			<li><a title="Main" href="main.xhtml">Back</a></li>
+		</ul>
+	</header>
+	<div class="container">
+		<main>
+			<form>
+				<div class="table">
+					<img alt="hyperlink" title="hyperlink" src="content/imgs/hyperlink.png" />
+					<div class="caption"><letter>H</letter><letter>y</letter><letter>p</letter><letter>e</letter><letter>r</letter><letter>l</letter><letter>i</letter><letter>n</letter><letter>k</letter><letter>s</letter></div>
+					<div class="exit">
+						<a title="Minimize">‒</a>
+						<a title="Maximize">□</a>
+						<a title="Exit" class="ext">x</a>
+					</div>
+				</div>
+				<div class="table">
+					<section>
+						<div class="thead">
+							<div class="tr">
+								<div class="th">Tag name</div>
+								<div class="th">href</div>
+								<div class="th">src</div>
+								<div class="th">data</div>
+								<div class="th">import</div>
+								<div class="th">code</div>
+								<div class="th">archive</div>
+								<div class="th">codebase</div>
+								<div class="th">xmlns</div>
+							</div>
+						</div>
+						<div class="tbody">
+							<div class="tr">
+								<div class="th">
+									<abbr title="anchor"><q>a</q></abbr>
+								</div>
+								<div class="td">
+									<label for="AnchorHasHref">
+										<input type="checkbox" id="AnchorHasHref" name="AnchorHasHref" checked="checked" title="Has an href" value="true" />
+										<input type="hidden" id="HdnAnchorHasHref" name="AnchorHasHref" value="false" />
+									</label>
+								</div>
+								<div class="td">
+									<label for="AnchorHasSrc">
+										<input type="checkbox" id="AnchorHasSrc" name="AnchorHasSrc" title="Has a src" value="true" />
+										<input type="hidden" id="HdnAnchorHasSrc" name="AnchorHasSrc" value="false" />
+									</label>
+								</div>
+								<div class="td">
+									<label for="AnchorHasData">
+										<input type="checkbox" id="AnchorHasData" name="AnchorHasData" title="Has a data" value="true" />
+										<input type="hidden" id="HdnAnchorHasData" name="AnchorHasData" value="false" />
+									</label>
+								</div>
+								<div class="td">
+									<label for="AnchorHasImport">
+										<input type="checkbox" id="AnchorHasImport" name="AnchorHasImport" title="Has an import" value="true" />
+										<input type="hidden" id="HdnAnchorHasImport" name="AnchorHasImport" value="false" />
+									</label>
+								</div>
+								<div class="td">
+									<label for="AnchorHasCode">
+										<input type="checkbox" id="AnchorHasCode" name="AnchorHasCode" title="Has a code" value="true" />
+										<input type="hidden" id="HdnAnchorHasCode" name="AnchorHasCode" value="false" />
+									</label>
+								</div>
+								<div class="td">
+									<label for="AnchorHasArchive">
+										<input type="checkbox" id="AnchorHasArchive" name="AnchorHasArchive" title="Has an archive" value="true" />
+										<input type="hidden" id="HdnAnchorHasArchive" name="AnchorHasArchive" value="false" />
+									</label>
+								</div>
+								<div class="td">
+									<label for="AnchorHasCodebase">
+										<input type="checkbox" id="AnchorHasCodebase" name="AnchorHasCodebase" title="Has a codebase" value="true" />
+										<input type="hidden" id="HdnAnchorHasCodebase" name="AnchorHasCodebase" value="false" />
+									</label>
+								</div>
+								<div class="td">
+									<label for="AnchorHasXmlns">
+										<input type="checkbox" id="AnchorHasXmlns" name="AnchorHasXmlns" title="Has an xmlns" value="true" />
+										<input type="hidden" id="HdnAnchorHasHref" name="AnchorHasHref" value="false" />
+									</label>
+								</div>
+							</div>
+							<div class="tr">
+								<div class="th">
+									<abbr><q>script</q></abbr>
+								</div>
+								<div class="td">
+									<label for="ScriptHasHref">
+										<input type="checkbox" id="ScriptHasHref" name="ScriptHasHref" title="Has an href" value="true" />
+										<input type="hidden" id="HdnScriptHasHref" name="ScriptHasHref" value="false" />
+									</label>
+								</div>
+								<div class="td">
+									<label for="ScriptHasSrc">
+										<input type="checkbox" id="ScriptHasSrc" name="ScriptHasSrc" checked="checked" title="Has a src" value="true" />
+										<input type="hidden" id="HdnScriptHasSrc" name="ScriptHasSrc" value="false" />
+									</label>
+								</div>
+								<div class="td">
+									<label for="ScriptHasData">
+										<input type="checkbox" id="ScriptHasData" name="ScriptHasData" title="Has a data" value="true" />
+										<input type="hidden" id="HdnScriptHasData" name="ScriptHasData" value="false" />
+									</label>
+								</div>
+								<div class="td">
+									<label for="ScriptHasImport">
+										<input type="checkbox" id="ScriptHasImport" name="ScriptHasImport" title="Has an import" value="true" />
+										<input type="hidden" id="HdnScriptHasImport" name="ScriptHasImport" value="false" />
+									</label>
+								</div>
+								<div class="td">
+									<label for="ScriptHasCode">
+										<input type="checkbox" id="ScriptHasCode" name="ScriptHasCode" title="Has a code" value="true" />
+										<input type="hidden" id="HdnScriptHasCode" name="ScriptHasCode" value="false" />
+									</label>
+								</div>
+								<div class="td">
+									<label for="ScriptHasArchive">
+										<input type="checkbox" id="ScriptHasArchive" name="ScriptHasArchive" title="Has an archive" value="true" />
+										<input type="hidden" id="HdnScriptHasArchive" name="ScriptHasArchive" value="false" />
+									</label>
+								</div>
+								<div class="td">
+									<label for="ScriptHasCodebase">
+										<input type="checkbox" id="ScriptHasCodebase" name="ScriptHasCodebase" title="Has a codebase" value="true" />
+										<input type="hidden" id="HdnScriptHasCodebase" name="ScriptHasCodebase" value="false" />
+									</label>
+								</div>
+								<div class="td">
+									<label for="ScriptHasXmlns">
+										<input type="checkbox" id="ScriptHasXmlns" name="ScriptHasXmlns" title="Has an xmlns" value="true" />
+										<input type="hidden" id="HdnScriptHasHref" name="ScriptHasHref" value="false" />
+									</label>
+								</div>
+							</div>
+							<div class="tr">
+								<div class="th">
+									<abbr><q>image</q></abbr>
+								</div>
+								<div class="td">
+									<label for="ImageHasHref">
+										<input type="checkbox" id="ImageHasHref" name="ImageHasHref" title="Has an href" value="true" />
+										<input type="hidden" id="HdnImageHasHref" name="ImageHasHref" value="false" />
+									</label>
+								</div>
+								<div class="td">
+									<label for="ImageHasSrc">
+										<input type="checkbox" id="ImageHasSrc" name="ImageHasSrc" checked="checked" title="Has a src" value="true" />
+										<input type="hidden" id="HdnImageHasSrc" name="ImageHasSrc" value="false" />
+									</label>
+								</div>
+								<div class="td">
+									<label for="ImageHasData">
+										<input type="checkbox" id="ImageHasData" name="ImageHasData" title="Has a data" value="true" />
+										<input type="hidden" id="HdnImageHasData" name="ImageHasData" value="false" />
+									</label>
+								</div>
+								<div class="td">
+									<label for="ImageHasImport">
+										<input type="checkbox" id="ImageHasImport" name="ImageHasImport" title="Has an import" value="true" />
+										<input type="hidden" id="HdnImageHasImport" name="ImageHasImport" value="false" />
+									</label>
+								</div>
+								<div class="td">
+									<label for="ImageHasCode">
+										<input type="checkbox" id="ImageHasCode" name="ImageHasCode" title="Has a code" value="true" />
+										<input type="hidden" id="HdnImageHasCode" name="ImageHasCode" value="false" />
+									</label>
+								</div>
+								<div class="td">
+									<label for="ImageHasArchive">
+										<input type="checkbox" id="ImageHasArchive" name="ImageHasArchive" title="Has an archive" value="true" />
+										<input type="hidden" id="HdnImageHasArchive" name="ImageHasArchive" value="false" />
+									</label>
+								</div>
+								<div class="td">
+									<label for="ImageHasCodebase">
+										<input type="checkbox" id="ImageHasCodebase" name="ImageHasCodebase" title="Has a codebase" value="true" />
+										<input type="hidden" id="HdnImageHasCodebase" name="ImageHasCodebase" value="false" />
+									</label>
+								</div>
+								<div class="td">
+									<label for="ImageHasXmlns">
+										<input type="checkbox" id="ImageHasXmlns" name="ImageHasXmlns" title="Has an xmlns" value="true" />
+										<input type="hidden" id="HdnImageHasHref" name="ImageHasHref" value="false" />
+									</label>
+								</div>
+							</div>
+							<div class="tr">
+								<div class="th">
+									<abbr><q>audio</q></abbr>
+								</div>
+								<div class="td">
+									<label for="AudioHasHref">
+										<input type="checkbox" id="AudioHasHref" name="AudioHasHref" title="Has an href" value="true" />
+										<input type="hidden" id="HdnAudioHasHref" name="AudioHasHref" value="false" />
+									</label>
+								</div>
+								<div class="td">
+									<label for="AudioHasSrc">
+										<input type="checkbox" id="AudioHasSrc" name="AudioHasSrc" checked="checked" title="Has a src" value="true" />
+										<input type="hidden" id="HdnAudioHasSrc" name="AudioHasSrc" value="false" />
+									</label>
+								</div>
+								<div class="td">
+									<label for="AudioHasData">
+										<input type="checkbox" id="AudioHasData" name="AudioHasData" title="Has a data" value="true" />
+										<input type="hidden" id="HdnAudioHasData" name="AudioHasData" value="false" />
+									</label>
+								</div>
+								<div class="td">
+									<label for="AudioHasImport">
+										<input type="checkbox" id="AudioHasImport" name="AudioHasImport" title="Has an import" value="true" />
+										<input type="hidden" id="HdnAudioHasImport" name="AudioHasImport" value="false" />
+									</label>
+								</div>
+								<div class="td">
+									<label for="AudioHasCode">
+										<input type="checkbox" id="AudioHasCode" name="AudioHasCode" title="Has a code" value="true" />
+										<input type="hidden" id="HdnAudioHasCode" name="AudioHasCode" value="false" />
+									</label>
+								</div>
+								<div class="td">
+									<label for="AudioHasArchive">
+										<input type="checkbox" id="AudioHasArchive" name="AudioHasArchive" title="Has an archive" value="true" />
+										<input type="hidden" id="HdnAudioHasArchive" name="AudioHasArchive" value="false" />
+									</label>
+								</div>
+								<div class="td">
+									<label for="AudioHasCodebase">
+										<input type="checkbox" id="AudioHasCodebase" name="AudioHasCodebase" title="Has a codebase" value="true" />
+										<input type="hidden" id="HdnAudioHasCodebase" name="AudioHasCodebase" value="false" />
+									</label>
+								</div>
+								<div class="td">
+									<label for="AudioHasXmlns">
+										<input type="checkbox" id="AudioHasXmlns" name="AudioHasXmlns" title="Has an xmlns" value="true" />
+										<input type="hidden" id="HdnAudioHasHref" name="AudioHasHref" value="false" />
+									</label>
+								</div>
+							</div>
+							<div class="tr">
+								<div class="th">
+									<abbr><q>video</q></abbr>
+								</div>
+								<div class="td">
+									<label for="VideoHasHref">
+										<input type="checkbox" id="VideoHasHref" name="VideoHasHref" title="Has an href" value="true" />
+										<input type="hidden" id="HdnVideoHasHref" name="VideoHasHref" value="false" />
+									</label>
+								</div>
+								<div class="td">
+									<label for="VideoHasSrc">
+										<input type="checkbox" id="VideoHasSrc" name="VideoHasSrc" checked="checked" title="Has a src" value="true" />
+										<input type="hidden" id="HdnVideoHasSrc" name="VideoHasSrc" value="false" />
+									</label>
+								</div>
+								<div class="td">
+									<label for="VideoHasData">
+										<input type="checkbox" id="VideoHasData" name="VideoHasData" title="Has a data" value="true" />
+										<input type="hidden" id="HdnVideoHasData" name="VideoHasData" value="false" />
+									</label>
+								</div>
+								<div class="td">
+									<label for="VideoHasImport">
+										<input type="checkbox" id="VideoHasImport" name="VideoHasImport" title="Has an import" value="true" />
+										<input type="hidden" id="HdnVideoHasImport" name="VideoHasImport" value="false" />
+									</label>
+								</div>
+								<div class="td">
+									<label for="VideoHasCode">
+										<input type="checkbox" id="VideoHasCode" name="VideoHasCode" title="Has a code" value="true" />
+										<input type="hidden" id="HdnVideoHasCode" name="VideoHasCode" value="false" />
+									</label>
+								</div>
+								<div class="td">
+									<label for="VideoHasArchive">
+										<input type="checkbox" id="VideoHasArchive" name="VideoHasArchive" title="Has an archive" value="true" />
+										<input type="hidden" id="HdnVideoHasArchive" name="VideoHasArchive" value="false" />
+									</label>
+								</div>
+								<div class="td">
+									<label for="VideoHasCodebase">
+										<input type="checkbox" id="VideoHasCodebase" name="VideoHasCodebase" title="Has a codebase" value="true" />
+										<input type="hidden" id="HdnVideoHasCodebase" name="VideoHasCodebase" value="false" />
+									</label>
+								</div>
+								<div class="td">
+									<label for="VideoHasXmlns">
+										<input type="checkbox" id="VideoHasXmlns" name="VideoHasXmlns" title="Has an xmlns" value="true" />
+										<input type="hidden" id="HdnVideoHasHref" name="VideoHasHref" value="false" />
+									</label>
+								</div>
+							</div>
+							<div class="tr">
+								<div class="th">
+									<abbr><q>source</q></abbr>
+								</div>
+								<div class="td">
+									<label for="SourceHasHref">
+										<input type="checkbox" id="SourceHasHref" name="SourceHasHref" title="Has an href" value="true" />
+										<input type="hidden" id="HdnSourceHasHref" name="SourceHasHref" value="false" />
+									</label>
+								</div>
+								<div class="td">
+									<label for="SourceHasSrc">
+										<input type="checkbox" id="SourceHasSrc" name="SourceHasSrc" checked="checked" title="Has a src" value="true" />
+										<input type="hidden" id="HdnSourceHasSrc" name="SourceHasSrc" value="false" />
+									</label>
+								</div>
+								<div class="td">
+									<label for="SourceHasData">
+										<input type="checkbox" id="SourceHasData" name="SourceHasData" title="Has a data" value="true" />
+										<input type="hidden" id="HdnSourceHasData" name="SourceHasData" value="false" />
+									</label>
+								</div>
+								<div class="td">
+									<label for="SourceHasImport">
+										<input type="checkbox" id="SourceHasImport" name="SourceHasImport" title="Has an import" value="true" />
+										<input type="hidden" id="HdnSourceHasImport" name="SourceHasImport" value="false" />
+									</label>
+								</div>
+								<div class="td">
+									<label for="SourceHasCode">
+										<input type="checkbox" id="SourceHasCode" name="SourceHasCode" title="Has a code" value="true" />
+										<input type="hidden" id="HdnSourceHasCode" name="SourceHasCode" value="false" />
+									</label>
+								</div>
+								<div class="td">
+									<label for="SourceHasArchive">
+										<input type="checkbox" id="SourceHasArchive" name="SourceHasArchive" title="Has an archive" value="true" />
+										<input type="hidden" id="HdnSourceHasArchive" name="SourceHasArchive" value="false" />
+									</label>
+								</div>
+								<div class="td">
+									<label for="SourceHasCodebase">
+										<input type="checkbox" id="SourceHasCodebase" name="SourceHasCodebase" title="Has a codebase" value="true" />
+										<input type="hidden" id="HdnSourceHasCodebase" name="SourceHasCodebase" value="false" />
+									</label>
+								</div>
+								<div class="td">
+									<label for="SourceHasXmlns">
+										<input type="checkbox" id="SourceHasXmlns" name="SourceHasXmlns" title="Has an xmlns" value="true" />
+										<input type="hidden" id="HdnSourceHasHref" name="SourceHasHref" value="false" />
+									</label>
+								</div>
+							</div>
+							<div class="tr">
+								<div class="th">
+									<abbr><q>track</q></abbr>
+								</div>
+								<div class="td">
+									<label for="TrackHasHref">
+										<input type="checkbox" id="TrackHasHref" name="TrackHasHref" title="Has an href" value="true" />
+										<input type="hidden" id="HdnTrackHasHref" name="TrackHasHref" value="false" />
+									</label>
+								</div>
+								<div class="td">
+									<label for="TrackHasSrc">
+										<input type="checkbox" id="TrackHasSrc" name="TrackHasSrc" checked="checked" title="Has a src" value="true" />
+										<input type="hidden" id="HdnTrackHasSrc" name="TrackHasSrc" value="false" />
+									</label>
+								</div>
+								<div class="td">
+									<label for="TrackHasData">
+										<input type="checkbox" id="TrackHasData" name="TrackHasData" title="Has a data" value="true" />
+										<input type="hidden" id="HdnTrackHasData" name="TrackHasData" value="false" />
+									</label>
+								</div>
+								<div class="td">
+									<label for="TrackHasImport">
+										<input type="checkbox" id="TrackHasImport" name="TrackHasImport" title="Has an import" value="true" />
+										<input type="hidden" id="HdnTrackHasImport" name="TrackHasImport" value="false" />
+									</label>
+								</div>
+								<div class="td">
+									<label for="TrackHasCode">
+										<input type="checkbox" id="TrackHasCode" name="TrackHasCode" title="Has a code" value="true" />
+										<input type="hidden" id="HdnTrackHasCode" name="TrackHasCode" value="false" />
+									</label>
+								</div>
+								<div class="td">
+									<label for="TrackHasArchive">
+										<input type="checkbox" id="TrackHasArchive" name="TrackHasArchive" title="Has an archive" value="true" />
+										<input type="hidden" id="HdnTrackHasArchive" name="TrackHasArchive" value="false" />
+									</label>
+								</div>
+								<div class="td">
+									<label for="TrackHasCodebase">
+										<input type="checkbox" id="TrackHasCodebase" name="TrackHasCodebase" title="Has a codebase" value="true" />
+										<input type="hidden" id="HdnTrackHasCodebase" name="TrackHasCodebase" value="false" />
+									</label>
+								</div>
+								<div class="td">
+									<label for="TrackHasXmlns">
+										<input type="checkbox" id="TrackHasXmlns" name="TrackHasXmlns" title="Has an xmlns" value="true" />
+										<input type="hidden" id="HdnTrackHasHref" name="TrackHasHref" value="false" />
+									</label>
+								</div>
+							</div>
+							<div class="tr">
+								<div class="th">
+									<abbr><q>style</q></abbr>
+								</div>
+								<div class="td">
+									<label for="StyleHasHref">
+										<input type="checkbox" id="StyleHasHref" name="StyleHasHref" title="Has an href" value="true" />
+										<input type="hidden" id="HdnStyleHasHref" name="StyleHasHref" value="false" />
+									</label>
+								</div>
+								<div class="td">
+									<label for="StyleHasSrc">
+										<input type="checkbox" id="StyleHasSrc" name="StyleHasSrc" title="Has a src" value="true" />
+										<input type="hidden" id="HdnStyleHasSrc" name="StyleHasSrc" value="false" />
+									</label>
+								</div>
+								<div class="td">
+									<label for="StyleHasData">
+										<input type="checkbox" id="StyleHasData" name="StyleHasData" title="Has a data" value="true" />
+										<input type="hidden" id="HdnStyleHasData" name="StyleHasData" value="false" />
+									</label>
+								</div>
+								<div class="td">
+									<label for="StyleHasImport">
+										<input type="checkbox" id="StyleHasImport" name="StyleHasImport" title="Has an import" value="true" />
+										<input type="hidden" id="HdnStyleHasImport" name="StyleHasImport" value="false" />
+									</label>
+								</div>
+								<div class="td">
+									<label for="StyleHasCode">
+										<input type="checkbox" id="StyleHasCode" name="StyleHasCode" title="Has a code" value="true" />
+										<input type="hidden" id="HdnStyleHasCode" name="StyleHasCode" value="false" />
+									</label>
+								</div>
+								<div class="td">
+									<label for="StyleHasArchive">
+										<input type="checkbox" id="StyleHasArchive" name="StyleHasArchive" title="Has an archive" value="true" />
+										<input type="hidden" id="HdnStyleHasArchive" name="StyleHasArchive" value="false" />
+									</label>
+								</div>
+								<div class="td">
+									<label for="StyleHasCodebase">
+										<input type="checkbox" id="StyleHasCodebase" name="StyleHasCodebase" title="Has a codebase" value="true" />
+										<input type="hidden" id="HdnStyleHasCodebase" name="StyleHasCodebase" value="false" />
+									</label>
+								</div>
+								<div class="td">
+									<label for="StyleHasXmlns">
+										<input type="checkbox" id="StyleHasXmlns" name="StyleHasXmlns" title="Has an xmlns" value="true" />
+										<input type="hidden" id="HdnStyleHasHref" name="StyleHasHref" value="false" />
+									</label>
+								</div>
+							</div>
+							<div class="tr">
+								<div class="th">
+									<abbr><q>object</q></abbr>
+								</div>
+								<div class="td">
+									<label for="ObjectHasHref">
+										<input type="checkbox" id="ObjectHasHref" name="ObjectHasHref" title="Has an href" value="true" />
+										<input type="hidden" id="HdnObjectHasHref" name="ObjectHasHref" value="false" />
+									</label>
+								</div>
+								<div class="td">
+									<label for="ObjectHasSrc">
+										<input type="checkbox" id="ObjectHasSrc" name="ObjectHasSrc" title="Has a src" value="true" />
+										<input type="hidden" id="HdnObjectHasSrc" name="ObjectHasSrc" value="false" />
+									</label>
+								</div>
+								<div class="td">
+									<label for="ObjectHasData">
+										<input type="checkbox" id="ObjectHasData" name="ObjectHasData" checked="checked" title="Has a data" value="true" />
+										<input type="hidden" id="HdnObjectHasData" name="ObjectHasData" value="false" />
+									</label>
+								</div>
+								<div class="td">
+									<label for="ObjectHasImport">
+										<input type="checkbox" id="ObjectHasImport" name="ObjectHasImport" title="Has an import" value="true" />
+										<input type="hidden" id="HdnObjectHasImport" name="ObjectHasImport" value="false" />
+									</label>
+								</div>
+								<div class="td">
+									<label for="ObjectHasCode">
+										<input type="checkbox" id="ObjectHasCode" name="ObjectHasCode" title="Has a code" value="true" />
+										<input type="hidden" id="HdnObjectHasCode" name="ObjectHasCode" value="false" />
+									</label>
+								</div>
+								<div class="td">
+									<label for="ObjectHasArchive">
+										<input type="checkbox" id="ObjectHasArchive" name="ObjectHasArchive" checked="checked" title="Has an archive" value="true" />
+										<input type="hidden" id="HdnObjectHasArchive" name="ObjectHasArchive" value="false" />
+									</label>
+								</div>
+								<div class="td">
+									<label for="ObjectHasCodebase">
+										<input type="checkbox" id="ObjectHasCodebase" name="ObjectHasCodebase" checked="checked" title="Has a codebase" value="true" />
+										<input type="hidden" id="HdnObjectHasCodebase" name="ObjectHasCodebase" value="false" />
+									</label>
+								</div>
+								<div class="td">
+									<label for="ObjectHasXmlns">
+										<input type="checkbox" id="ObjectHasXmlns" name="ObjectHasXmlns" title="Has an xmlns" value="true" />
+										<input type="hidden" id="HdnObjectHasHref" name="ObjectHasHref" value="false" />
+									</label>
+								</div>
+							</div>
+							<div class="tr">
+								<div class="th">
+									<abbr><q>link</q></abbr>
+								</div>
+								<div class="td">
+									<label for="LinkHasHref">
+										<input type="checkbox" id="LinkHasHref" name="LinkHasHref" checked="checked" title="Has an href" value="true" />
+										<input type="hidden" id="HdnLinkHasHref" name="LinkHasHref" value="false" />
+									</label>
+								</div>
+								<div class="td">
+									<label for="LinkHasSrc">
+										<input type="checkbox" id="LinkHasSrc" name="LinkHasSrc" title="Has a src" value="true" />
+										<input type="hidden" id="HdnLinkHasSrc" name="LinkHasSrc" value="false" />
+									</label>
+								</div>
+								<div class="td">
+									<label for="LinkHasData">
+										<input type="checkbox" id="LinkHasData" name="LinkHasData" title="Has a data" value="true" />
+										<input type="hidden" id="HdnLinkHasData" name="LinkHasData" value="false" />
+									</label>
+								</div>
+								<div class="td">
+									<label for="LinkHasImport">
+										<input type="checkbox" id="LinkHasImport" name="LinkHasImport" title="Has an import" value="true" />
+										<input type="hidden" id="HdnLinkHasImport" name="LinkHasImport" value="false" />
+									</label>
+								</div>
+								<div class="td">
+									<label for="LinkHasCode">
+										<input type="checkbox" id="LinkHasCode" name="LinkHasCode" title="Has a code" value="true" />
+										<input type="hidden" id="HdnLinkHasCode" name="LinkHasCode" value="false" />
+									</label>
+								</div>
+								<div class="td">
+									<label for="LinkHasArchive">
+										<input type="checkbox" id="LinkHasArchive" name="LinkHasArchive" title="Has an archive" value="true" />
+										<input type="hidden" id="HdnLinkHasArchive" name="LinkHasArchive" value="false" />
+									</label>
+								</div>
+								<div class="td">
+									<label for="LinkHasCodebase">
+										<input type="checkbox" id="LinkHasCodebase" name="LinkHasCodebase" title="Has a codebase" value="true" />
+										<input type="hidden" id="HdnLinkHasCodebase" name="LinkHasCodebase" value="false" />
+									</label>
+								</div>
+								<div class="td">
+									<label for="LinkHasXmlns">
+										<input type="checkbox" id="LinkHasXmlns" name="LinkHasXmlns" title="Has an xmlns" value="true" />
+										<input type="hidden" id="HdnLinkHasHref" name="LinkHasHref" value="false" />
+									</label>
+								</div>
+							</div>
+							<div class="tr">
+								<div class="th">
+									<abbr><q>applet</q></abbr>
+								</div>
+								<div class="td">
+									<label for="AppletHasHref">
+										<input type="checkbox" id="AppletHasHref" name="AppletHasHref" title="Has an href" value="true" />
+										<input type="hidden" id="HdnAppletHasHref" name="AppletHasHref" value="false" />
+									</label>
+								</div>
+								<div class="td">
+									<label for="AppletHasSrc">
+										<input type="checkbox" id="AppletHasSrc" name="AppletHasSrc" title="Has a src" value="true" />
+										<input type="hidden" id="HdnAppletHasSrc" name="AppletHasSrc" value="false" />
+									</label>
+								</div>
+								<div class="td">
+									<label for="AppletHasData">
+										<input type="checkbox" id="AppletHasData" name="AppletHasData" title="Has a data" value="true" />
+										<input type="hidden" id="HdnAppletHasData" name="AppletHasData" value="false" />
+									</label>
+								</div>
+								<div class="td">
+									<label for="AppletHasImport">
+										<input type="checkbox" id="AppletHasImport" name="AppletHasImport" title="Has an import" value="true" />
+										<input type="hidden" id="HdnAppletHasImport" name="AppletHasImport" value="false" />
+									</label>
+								</div>
+								<div class="td">
+									<label for="AppletHasCode">
+										<input type="checkbox" id="AppletHasCode" name="AppletHasCode" checked="checked" title="Has a code" value="true" />
+										<input type="hidden" id="HdnAppletHasCode" name="AppletHasCode" value="false" />
+									</label>
+								</div>
+								<div class="td">
+									<label for="AppletHasArchive">
+										<input type="checkbox" id="AppletHasArchive" name="AppletHasArchive" checked="checked" title="Has an archive" value="true" />
+										<input type="hidden" id="HdnAppletHasArchive" name="AppletHasArchive" value="false" />
+									</label>
+								</div>
+								<div class="td">
+									<label for="AppletHasCodebase">
+										<input type="checkbox" id="AppletHasCodebase" name="AppletHasCodebase" checked="checked" title="Has a codebase" value="true" />
+										<input type="hidden" id="HdnAppletHasCodebase" name="AppletHasCodebase" value="false" />
+									</label>
+								</div>
+								<div class="td">
+									<label for="AppletHasXmlns">
+										<input type="checkbox" id="AppletHasXmlns" name="AppletHasXmlns" title="Has an xmlns" value="true" />
+										<input type="hidden" id="HdnAppletHasHref" name="AppletHasHref" value="false" />
+									</label>
+								</div>
+							</div>
+							<div class="tr">
+								<div class="th">
+									<abbr title="Scalable Vector Graphic"><q>svg</q></abbr>
+								</div>
+								<div class="td">
+									<label for="SvgHasHref">
+										<input type="checkbox" id="SvgHasHref" name="SvgHasHref" title="Has an href" value="true" />
+										<input type="hidden" id="HdnSvgHasHref" name="SvgHasHref" value="false" />
+									</label>
+								</div>
+								<div class="td">
+									<label for="SvgHasSrc">
+										<input type="checkbox" id="SvgHasSrc" name="SvgHasSrc" title="Has a src" value="true" />
+										<input type="hidden" id="HdnSvgHasSrc" name="SvgHasSrc" value="false" />
+									</label>
+								</div>
+								<div class="td">
+									<label for="SvgHasData">
+										<input type="checkbox" id="SvgHasData" name="SvgHasData" title="Has a data" value="true" />
+										<input type="hidden" id="HdnSvgHasData" name="SvgHasData" value="false" />
+									</label>
+								</div>
+								<div class="td">
+									<label for="SvgHasImport">
+										<input type="checkbox" id="SvgHasImport" name="SvgHasImport" title="Has an import" value="true" />
+										<input type="hidden" id="HdnSvgHasImport" name="SvgHasImport" value="false" />
+									</label>
+								</div>
+								<div class="td">
+									<label for="SvgHasCode">
+										<input type="checkbox" id="SvgHasCode" name="SvgHasCode" title="Has a code" value="true" />
+										<input type="hidden" id="HdnSvgHasCode" name="SvgHasCode" value="false" />
+									</label>
+								</div>
+								<div class="td">
+									<label for="SvgHasArchive">
+										<input type="checkbox" id="SvgHasArchive" name="SvgHasArchive" title="Has an archive" value="true" />
+										<input type="hidden" id="HdnSvgHasArchive" name="SvgHasArchive" value="false" />
+									</label>
+								</div>
+								<div class="td">
+									<label for="SvgHasCodebase">
+										<input type="checkbox" id="SvgHasCodebase" name="SvgHasCodebase" title="Has a codebase" value="true" />
+										<input type="hidden" id="HdnSvgHasCodebase" name="SvgHasCodebase" value="false" />
+									</label>
+								</div>
+								<div class="td">
+									<label for="SvgHasXmlns">
+										<input type="checkbox" id="SvgHasXmlns" name="SvgHasXmlns" checked="checked" title="Has an xmlns" value="true" />
+										<input type="hidden" id="HdnSvgHasHref" name="SvgHasHref" value="false" />
+									</label>
+								</div>
+							</div>
+							<div class="tr">
+								<div class="th">
+									<abbr title="Extensible Markup Language"><q>xml</q></abbr>
+								</div>
+								<div class="td">
+									<label for="XmlHasHref">
+										<input type="checkbox" id="XmlHasHref" name="XmlHasHref" title="Has an href" value="true" />
+										<input type="hidden" id="HdnXmlHasHref" name="XmlHasHref" value="false" />
+									</label>
+								</div>
+								<div class="td">
+									<label for="XmlHasSrc">
+										<input type="checkbox" id="XmlHasSrc" name="XmlHasSrc" title="Has a src" value="true" />
+										<input type="hidden" id="HdnXmlHasSrc" name="XmlHasSrc" value="false" />
+									</label>
+								</div>
+								<div class="td">
+									<label for="XmlHasData">
+										<input type="checkbox" id="XmlHasData" name="XmlHasData" title="Has a data" value="true" />
+										<input type="hidden" id="HdnXmlHasData" name="XmlHasData" value="false" />
+									</label>
+								</div>
+								<div class="td">
+									<label for="XmlHasImport">
+										<input type="checkbox" id="XmlHasImport" name="XmlHasImport" title="Has an import" value="true" />
+										<input type="hidden" id="HdnXmlHasImport" name="XmlHasImport" value="false" />
+									</label>
+								</div>
+								<div class="td">
+									<label for="XmlHasCode">
+										<input type="checkbox" id="XmlHasCode" name="XmlHasCode" title="Has a code" value="true" />
+										<input type="hidden" id="HdnXmlHasCode" name="XmlHasCode" value="false" />
+									</label>
+								</div>
+								<div class="td">
+									<label for="XmlHasArchive">
+										<input type="checkbox" id="XmlHasArchive" name="XmlHasArchive" title="Has an archive" value="true" />
+										<input type="hidden" id="HdnXmlHasArchive" name="XmlHasArchive" value="false" />
+									</label>
+								</div>
+								<div class="td">
+									<label for="XmlHasCodebase">
+										<input type="checkbox" id="XmlHasCodebase" name="XmlHasCodebase" title="Has a codebase" value="true" />
+										<input type="hidden" id="HdnXmlHasCodebase" name="XmlHasCodebase" value="false" />
+									</label>
+								</div>
+								<div class="td">
+									<label for="XmlHasXmlns">
+										<input type="checkbox" id="XmlHasXmlns" name="XmlHasXmlns" title="Has an xmlns" value="true" />
+										<input type="hidden" id="HdnXmlHasHref" name="XmlHasHref" value="false" />
+									</label>
+								</div>
+							</div>
+						</div>
+					</section>
+				</div>
+				<section>
+					<div class="table">
+						<div class="tbody">
+							<div class="tr">
+								<div id="empty" class="td"></div>
+								<div id="get_button" class="td">
+									<label for="get">
+										<input type="submit" name="getHyperlinks" class="get" id="get" formaction="http://www.w3schools.com/" formmethod="get" title="get" value="get" />
+									</label>
+								</div>
+								<div id="post_button" class="td">
+									<label for="post">
+										<input type="submit" name="postHyperlinks" class="post" id="post" formaction="http://www.w3schools.com/" formmethod="post" title="post" value="post" />
+									</label>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+			</form>
+		</main>
+	</div>
+</body>
+</html>

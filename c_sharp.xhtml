@@ -1,0 +1,956 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<link rel="icon" href="content/imgs/csharp.png" />
+	<link rel="stylesheet" href="content/style/c_sharp.css" />
+	<title></title>
+</head>
+<body>
+	<header>
+		<ul id="nav">
+			<li><a title="Main" href="main.xhtml">Back</a></li>
+		</ul>
+	</header>
+	<div class="container">
+		<main>
+			<form>
+				<section>
+					<table>
+						<thead>
+							<tr>
+								<td id="caption_image">
+									<img alt="C#" title="C#" src="content/imgs/csharp.png" />
+								</td>
+								<td id="caption">
+									Integrated/Built-in Types
+								</td>
+								<td id="close">
+									<a title="Minimize">‒</a>
+									<a title="Maximize" class="open">□</a>
+									<a title="Exit" class="ext">x</a>
+								</td>
+							</tr>
+						</thead>
+					</table>
+				</section>
+				<section id="second">
+					<table>
+						<thead>
+							<tr>
+								<th>
+									<sub>A</sub>
+									<hr />
+									<sup>N</sup>
+								</th>
+								<th>Type</th>
+								<th>C# alias</th>
+								<th>Integral</th>
+								<th>Built-in</th>
+								<th>Integrated</th>
+								<th>Nullable</th>
+								<th>Positive</th>
+								<th>Negative</th>
+								<th>Stack</th>
+								<th>Heap</th>
+								<th>Struct</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<th>Object</th>
+								<th>object</th>
+								<td>
+									<label for="ObjectIsIntegral">
+										<input type="checkbox" id="ObjectIsIntegral" name="ObjectIsIntegral" title="Is an integral" value="true" disabled="disabled" />
+										<input type="hidden" id="HdnObjectIsIntegral" name="ObjectIsIntegral" value="false" />
+									</label>
+								</td>
+								<td>
+									<label for="ObjectIsBuiltIn">
+										<input type="checkbox" id="ObjectIsBuiltIn" name="ObjectIsBuiltIn" checked="checked" title="Is a built-in" value="true" disabled="disabled" />
+										<input type="hidden" id="HdnObjectIsBuiltIn" name="ObjectIsBuiltIn" value="false" />
+									</label>
+								</td>
+								<td>
+									<label for="ObjectIsIntegrated">
+										<input type="checkbox" id="ObjectIsIntegrated" name="ObjectIsIntegrated" checked="checked" title="Is an integrated" value="true" disabled="disabled" />
+										<input type="hidden" id="HdnObjectIsIntegrated" name="ObjectIsIntegrated" value="false" />
+									</label>
+								</td>
+								<td>
+									<label for="ObjectIsNullable">
+										<input type="checkbox" id="ObjectIsNullable" name="ObjectIsNullable" checked="checked" title="Is a nullable" value="true" disabled="disabled" />
+										<input type="hidden" id="HdnObjectIsNullable" name="ObjectIsNullable" value="false" />
+									</label>
+								</td>
+								<td>
+									<label for="ObjectIsPositive">
+										<input type="checkbox" id="ObjectIsPositive" name="ObjectIsPositive" title="Is a positive" value="true" disabled="disabled" />
+										<input type="hidden" id="HdnObjectIsPositive" name="ObjectIsPositive" value="false" />
+									</label>
+								</td>
+								<td>
+									<label for="ObjectIsNegative">
+										<input type="checkbox" id="ObjectIsNegative" name="ObjectIsNegative" title="Is a negative" value="true" disabled="disabled" />
+										<input type="hidden" id="HdnObjectIsNegative" name="ObjectIsNegative" value="false" />
+									</label>
+								</td>
+								<td>
+									<label for="ObjectIsStack">
+										<input type="checkbox" id="ObjectIsStack" name="ObjectIsStack" title="Is a stack" value="true" disabled="disabled" />
+										<input type="hidden" id="HdnObjectIsStack" name="ObjectIsStack" value="false" />
+									</label>
+								</td>
+								<td>
+									<label for="ObjectIsHeap">
+										<input type="checkbox" id="ObjectIsHeap" name="ObjectIsHeap" checked="checked" title="Is a heap" value="true" disabled="disabled" />
+										<input type="hidden" id="HdnObjectIsHeap" name="ObjectIsHeap" value="false" />
+									</label>
+								</td>
+								<td>
+									<label for="ObjectIsStruct">
+										<input type="checkbox" id="ObjectIsStruct" name="ObjectIsStruct" title="Is a struct" value="true" disabled="disabled" />
+										<input type="hidden" id="HdnObjectIsStruct" name="ObjectIsStruct" value="false" />
+									</label>
+								</td>
+							</tr>
+							<tr>
+								<th>String</th>
+								<th>string</th>
+								<td>
+									<label for="StringIsIntegral">
+										<input type="checkbox" id="StringIsIntegral" name="StringIsIntegral" title="Is an integral" value="true" disabled="disabled" />
+										<input type="hidden" id="HdnStringIsIntegral" name="StringIsIntegral" value="false" />
+									</label>
+								</td>
+								<td>
+									<label for="StringIsBuiltIn">
+										<input type="checkbox" id="StringIsBuiltIn" name="StringIsBuiltIn" checked="checked" title="Is a built-in" value="true" disabled="disabled" />
+										<input type="hidden" id="HdnStringIsBuiltIn" name="StringIsBuiltIn" value="false" />
+									</label>
+								</td>
+								<td>
+									<label for="StringIsIntegrated">
+										<input type="checkbox" id="StringIsIntegrated" name="StringIsIntegrated" checked="checked" title="Is an integrated" value="true" disabled="disabled" />
+										<input type="hidden" id="HdnStringIsIntegrated" name="StringIsIntegrated" value="false" />
+									</label>
+								</td>
+								<td>
+									<label for="StringIsNullable">
+										<input type="checkbox" id="StringIsNullable" name="StringIsNullable" checked="checked" title="Is a nullable" value="true" disabled="disabled" />
+										<input type="hidden" id="HdnStringIsNullable" name="StringIsNullable" value="false" />
+									</label>
+								</td>
+								<td>
+									<label for="StringIsPositive">
+										<input type="checkbox" id="StringIsPositive" name="StringIsPositive" title="Is a positive" value="true" disabled="disabled" />
+										<input type="hidden" id="HdnStringIsPositive" name="StringIsPositive" value="false" />
+									</label>
+								</td>
+								<td>
+									<label for="StringIsNegative">
+										<input type="checkbox" id="StringIsNegative" name="StringIsNegative" title="Is a negative" value="true" disabled="disabled" />
+										<input type="hidden" id="HdnStringIsNegative" name="StringIsNegative" value="false" />
+									</label>
+								</td>
+								<td>
+									<label for="StringIsStack">
+										<input type="checkbox" id="StringIsStack" name="StringIsStack" title="Is a stack" value="true" disabled="disabled" />
+										<input type="hidden" id="HdnStringIsStack" name="StringIsStack" value="false" />
+									</label>
+								</td>
+								<td>
+									<label for="StringIsHeap">
+										<input type="checkbox" id="StringIsHeap" name="StringIsHeap" checked="checked" title="Is a heap" value="true" disabled="disabled" />
+										<input type="hidden" id="HdnStringIsHeap" name="StringIsHeap" value="false" />
+									</label>
+								</td>
+								<td>
+									<label for="StringIsStruct">
+										<input type="checkbox" id="StringIsStruct" name="StringIsStruct" title="Is a struct" value="true" disabled="disabled" />
+										<input type="hidden" id="HdnStringIsStruct" name="StringIsStruct" value="false" />
+									</label>
+								</td>
+							</tr>
+							<tr>
+								<th>Void</th>
+								<th>void</th>
+								<td>
+									<label for="VoidIsIntegral">
+										<input type="checkbox" id="VoidIsIntegral" name="VoidIsIntegral" title="Is an integral" value="true" disabled="disabled" />
+										<input type="hidden" id="HdnVoidIsIntegral" name="VoidIsIntegral" value="false" />
+									</label>
+								</td>
+								<td>
+									<label for="VoidIsBuiltIn">
+										<input type="checkbox" id="VoidIsBuiltIn" name="VoidIsBuiltIn" checked="checked" title="Is a built-in" value="true" disabled="disabled" />
+										<input type="hidden" id="HdnVoidIsBuiltIn" name="VoidIsBuiltIn" value="false" />
+									</label>
+								</td>
+								<td>
+									<label for="VoidIsIntegrated">
+										<input type="checkbox" id="VoidIsIntegrated" name="VoidIsIntegrated" checked="checked" title="Is an integrated" value="true" disabled="disabled" />
+										<input type="hidden" id="HdnVoidIsIntegrated" name="VoidIsIntegrated" value="false" />
+									</label>
+								</td>
+								<td>
+									<label for="VoidIsNullable">
+										<input type="checkbox" id="VoidIsNullable" name="VoidIsNullable" title="Is a nullable" value="true" disabled="disabled" />
+										<input type="hidden" id="HdnVoidIsNullable" name="VoidIsNullable" value="false" />
+									</label>
+								</td>
+								<td>
+									<label for="VoidIsPositive">
+										<input type="checkbox" id="VoidIsPositive" name="VoidIsPositive" title="Is a positive" value="true" disabled="disabled" />
+										<input type="hidden" id="HdnVoidIsPositive" name="VoidIsPositive" value="false" />
+									</label>
+								</td>
+								<td>
+									<label for="VoidIsNegative">
+										<input type="checkbox" id="VoidIsNegative" name="VoidIsNegative" title="Is a negative" value="true" disabled="disabled" />
+										<input type="hidden" id="HdnVoidIsNegative" name="VoidIsNegative" value="false" />
+									</label>
+								</td>
+								<td>
+									<label for="VoidIsStack">
+										<input type="checkbox" id="VoidIsStack" name="VoidIsStack" checked="checked" title="Is a stack" value="true" disabled="disabled" />
+										<input type="hidden" id="HdnVoidIsStack" name="VoidIsStack" value="false" />
+									</label>
+								</td>
+								<td>
+									<label for="VoidIsHeap">
+										<input type="checkbox" id="VoidIsHeap" name="VoidIsHeap" title="Is a heap" value="true" disabled="disabled" />
+										<input type="hidden" id="HdnVoidIsHeap" name="VoidIsHeap" value="false" />
+									</label>
+								</td>
+								<td>
+									<label for="VoidIsStruct">
+										<input type="checkbox" id="VoidIsStruct" name="VoidIsStruct" checked="checked" title="Is a struct" value="true" disabled="disabled" />
+										<input type="hidden" id="HdnVoidIsStruct" name="VoidIsStruct" value="false" />
+									</label>
+								</td>
+							</tr>
+							<tr>
+								<th>Char</th>
+								<th>char</th>
+								<td>
+									<label for="CharIsIntegral">
+										<input type="checkbox" id="CharIsIntegral" name="CharIsIntegral" title="Is an integral" value="true" disabled="disabled" />
+										<input type="hidden" id="HdnCharIsIntegral" name="CharIsIntegral" value="false" />
+									</label>
+								</td>
+								<td>
+									<label for="CharIsBuiltIn">
+										<input type="checkbox" id="CharIsBuiltIn" name="CharIsBuiltIn" checked="checked" title="Is a built-in" value="true" disabled="disabled" />
+										<input type="hidden" id="HdnCharIsBuiltIn" name="CharIsBuiltIn" value="false" />
+									</label>
+								</td>
+								<td>
+									<label for="CharIsIntegrated">
+										<input type="checkbox" id="CharIsIntegrated" name="CharIsIntegrated" checked="checked" title="Is an integrated" value="true" disabled="disabled" />
+										<input type="hidden" id="HdnCharIsIntegrated" name="CharIsIntegrated" value="false" />
+									</label>
+								</td>
+								<td>
+									<label for="CharIsNullable">
+										<input type="checkbox" id="CharIsNullable" name="CharIsNullable" title="Is a nullable" value="true" disabled="disabled" />
+										<input type="hidden" id="HdnCharIsNullable" name="CharIsNullable" value="false" />
+									</label>
+								</td>
+								<td>
+									<label for="CharIsPositive">
+										<input type="checkbox" id="CharIsPositive" name="CharIsPositive" title="Is a positive" value="true" disabled="disabled" />
+										<input type="hidden" id="HdnCharIsPositive" name="CharIsPositive" value="false" />
+									</label>
+								</td>
+								<td>
+									<label for="CharIsNegative">
+										<input type="checkbox" id="CharIsNegative" name="CharIsNegative" title="Is a negative" value="true" disabled="disabled" />
+										<input type="hidden" id="HdnCharIsNegative" name="CharIsNegative" value="false" />
+									</label>
+								</td>
+								<td>
+									<label for="CharIsStack">
+										<input type="checkbox" id="CharIsStack" name="CharIsStack" checked="checked" title="Is a stack" value="true" disabled="disabled" />
+										<input type="hidden" id="HdnCharIsStack" name="CharIsStack" value="false" />
+									</label>
+								</td>
+								<td>
+									<label for="CharIsHeap">
+										<input type="checkbox" id="CharIsHeap" name="CharIsHeap" title="Is a heap" value="true" disabled="disabled" />
+										<input type="hidden" id="HdnCharIsHeap" name="CharIsHeap" value="false" />
+									</label>
+								</td>
+								<td>
+									<label for="CharIsStruct">
+										<input type="checkbox" id="CharIsStruct" name="CharIsStruct" checked="checked" title="Is a struct" value="true" disabled="disabled" />
+										<input type="hidden" id="HdnCharIsStruct" name="CharIsStruct" value="false" />
+									</label>
+								</td>
+							</tr>
+							<tr>
+								<th>Byte</th>
+								<th>byte</th>
+								<td>
+									<label for="ByteIsIntegral">
+										<input type="checkbox" id="ByteIsIntegral" name="ByteIsIntegral" checked="checked" title="Is an integral" value="true" disabled="disabled" />
+										<input type="hidden" id="HdnByteIsIntegral" name="ByteIsIntegral" value="false" />
+									</label>
+								</td>
+								<td>
+									<label for="ByteIsBuiltIn">
+										<input type="checkbox" id="ByteIsBuiltIn" name="ByteIsBuiltIn" checked="checked" title="Is a built-in" value="true" disabled="disabled" />
+										<input type="hidden" id="HdnByteIsBuiltIn" name="ByteIsBuiltIn" value="false" />
+									</label>
+								</td>
+								<td>
+									<label for="ByteIsIntegrated">
+										<input type="checkbox" id="ByteIsIntegrated" name="ByteIsIntegrated" checked="checked" title="Is an integrated" value="true" disabled="disabled" />
+										<input type="hidden" id="HdnByteIsIntegrated" name="ByteIsIntegrated" value="false" />
+									</label>
+								</td>
+								<td>
+									<label for="ByteIsNullable">
+										<input type="checkbox" id="ByteIsNullable" name="ByteIsNullable" title="Is a nullable" value="true" disabled="disabled" />
+										<input type="hidden" id="HdnByteIsNullable" name="ByteIsNullable" value="false" />
+									</label>
+								</td>
+								<td>
+									<label for="ByteIsPositive">
+										<input type="checkbox" id="ByteIsPositive" name="ByteIsPositive" checked="checked" title="Is a positive" value="true" disabled="disabled" />
+										<input type="hidden" id="HdnByteIsPositive" name="ByteIsPositive" value="false" />
+									</label>
+								</td>
+								<td>
+									<label for="ByteIsNegative">
+										<input type="checkbox" id="ByteIsNegative" name="ByteIsNegative" title="Is a negative" value="true" disabled="disabled" />
+										<input type="hidden" id="HdnByteIsNegative" name="ByteIsNegative" value="false" />
+									</label>
+								</td>
+								<td>
+									<label for="ByteIsStack">
+										<input type="checkbox" id="ByteIsStack" name="ByteIsStack" checked="checked" title="Is a stack" value="true" disabled="disabled" />
+										<input type="hidden" id="HdnByteIsStack" name="ByteIsStack" value="false" />
+									</label>
+								</td>
+								<td>
+									<label for="ByteIsHeap">
+										<input type="checkbox" id="ByteIsHeap" name="ByteIsHeap" title="Is a heap" value="true" disabled="disabled" />
+										<input type="hidden" id="HdnByteIsHeap" name="ByteIsHeap" value="false" />
+									</label>
+								</td>
+								<td>
+									<label for="ByteIsStruct">
+										<input type="checkbox" id="ByteIsStruct" name="ByteIsStruct" checked="checked" title="Is a struct" value="true" disabled="disabled" />
+										<input type="hidden" id="HdnByteIsStruct" name="ByteIsStruct" value="false" />
+									</label>
+								</td>
+							</tr>
+							<tr>
+								<th>SByte</th>
+								<th>sbyte</th>
+								<td>
+									<label for="SByteIsIntegral">
+										<input type="checkbox" id="SByteIsIntegral" name="SByteIsIntegral" checked="checked" title="Is an integral" value="true" disabled="disabled" />
+										<input type="hidden" id="HdnSByteIsIntegral" name="SByteIsIntegral" value="false" />
+									</label>
+								</td>
+								<td>
+									<label for="SByteIsBuiltIn">
+										<input type="checkbox" id="SByteIsBuiltIn" name="SByteIsBuiltIn" checked="checked" title="Is a built-in" value="true" disabled="disabled" />
+										<input type="hidden" id="HdnSByteIsBuiltIn" name="SByteIsBuiltIn" value="false" />
+									</label>
+								</td>
+								<td>
+									<label for="SByteIsIntegrated">
+										<input type="checkbox" id="SByteIsIntegrated" name="SByteIsIntegrated" checked="checked" title="Is an integrated" value="true" disabled="disabled" />
+										<input type="hidden" id="HdnSByteIsIntegrated" name="SByteIsIntegrated" value="false" />
+									</label>
+								</td>
+								<td>
+									<label for="SByteIsNullable">
+										<input type="checkbox" id="SByteIsNullable" name="SByteIsNullable" title="Is a nullable" value="true" disabled="disabled" />
+										<input type="hidden" id="HdnSByteIsNullable" name="SByteIsNullable" value="false" />
+									</label>
+								</td>
+								<td>
+									<label for="SByteIsPositive">
+										<input type="checkbox" id="SByteIsPositive" name="SByteIsPositive" checked="checked" title="Is a positive" value="true" disabled="disabled" />
+										<input type="hidden" id="HdnSByteIsPositive" name="SByteIsPositive" value="false" />
+									</label>
+								</td>
+								<td>
+									<label for="SByteIsNegative">
+										<input type="checkbox" id="SByteIsNegative" name="SByteIsNegative" checked="checked" title="Is a negative" value="true" disabled="disabled" />
+										<input type="hidden" id="HdnSByteIsNegative" name="SByteIsNegative" value="false" />
+									</label>
+								</td>
+								<td>
+									<label for="SByteIsStack">
+										<input type="checkbox" id="SByteIsStack" name="SByteIsStack" checked="checked" title="Is a stack" value="true" disabled="disabled" />
+										<input type="hidden" id="HdnSByteIsStack" name="SByteIsStack" value="false" />
+									</label>
+								</td>
+								<td>
+									<label for="SByteIsHeap">
+										<input type="checkbox" id="SByteIsHeap" name="SByteIsHeap" title="Is a heap" value="true" disabled="disabled" />
+										<input type="hidden" id="HdnSByteIsHeap" name="SByteIsHeap" value="false" />
+									</label>
+								</td>
+								<td>
+									<label for="SByteIsStruct">
+										<input type="checkbox" id="SByteIsStruct" name="SByteIsStruct" checked="checked" title="Is a struct" value="true" disabled="disabled" />
+										<input type="hidden" id="HdnSByteIsStruct" name="SByteIsStruct" value="false" />
+									</label>
+								</td>
+							</tr>
+							<tr>
+								<th>Int16</th>
+								<th>short</th>
+								<td>
+									<label for="ShortIsIntegral">
+										<input type="checkbox" id="ShortIsIntegral" name="ShortIsIntegral" checked="checked" title="Is an integral" value="true" disabled="disabled" />
+										<input type="hidden" id="HdnShortIsIntegral" name="ShortIsIntegral" value="false" />
+									</label>
+								</td>
+								<td>
+									<label for="ShortIsBuiltIn">
+										<input type="checkbox" id="ShortIsBuiltIn" name="ShortIsBuiltIn" checked="checked" title="Is a built-in" value="true" disabled="disabled" />
+										<input type="hidden" id="HdnShortIsBuiltIn" name="ShortIsBuiltIn" value="false" />
+									</label>
+								</td>
+								<td>
+									<label for="ShortIsIntegrated">
+										<input type="checkbox" id="ShortIsIntegrated" name="ShortIsIntegrated" checked="checked" title="Is an integrated" value="true" disabled="disabled" />
+										<input type="hidden" id="HdnShortIsIntegrated" name="ShortIsIntegrated" value="false" />
+									</label>
+								</td>
+								<td>
+									<label for="ShortIsNullable">
+										<input type="checkbox" id="ShortIsNullable" name="ShortIsNullable" title="Is a nullable" value="true" disabled="disabled" />
+										<input type="hidden" id="HdnShortIsNullable" name="ShortIsNullable" value="false" />
+									</label>
+								</td>
+								<td>
+									<label for="ShortIsPositive">
+										<input type="checkbox" id="ShortIsPositive" name="ShortIsPositive" checked="checked" title="Is a positive" value="true" disabled="disabled" />
+										<input type="hidden" id="HdnShortIsPositive" name="ShortIsPositive" value="false" />
+									</label>
+								</td>
+								<td>
+									<label for="ShortIsNegative">
+										<input type="checkbox" id="ShortIsNegative" name="ShortIsNegative" checked="checked" title="Is a negative" value="true" disabled="disabled" />
+										<input type="hidden" id="HdnShortIsNegative" name="ShortIsNegative" value="false" />
+									</label>
+								</td>
+								<td>
+									<label for="ShortIsStack">
+										<input type="checkbox" id="ShortIsStack" name="ShortIsStack" checked="checked" title="Is a stack" value="true" disabled="disabled" />
+										<input type="hidden" id="HdnShortIsStack" name="ShortIsStack" value="false" />
+									</label>
+								</td>
+								<td>
+									<label for="ShortIsHeap">
+										<input type="checkbox" id="ShortIsHeap" name="ShortIsHeap" title="Is a heap" value="true" disabled="disabled" />
+										<input type="hidden" id="HdnShortIsHeap" name="ShortIsHeap" value="false" />
+									</label>
+								</td>
+								<td>
+									<label for="ShortIsStruct">
+										<input type="checkbox" id="ShortIsStruct" name="ShortIsStruct" checked="checked" title="Is a struct" value="true" disabled="disabled" />
+										<input type="hidden" id="HdnShortIsStruct" name="ShortIsStruct" value="false" />
+									</label>
+								</td>
+							</tr>
+							<tr>
+								<th>UInt16</th>
+								<th>ushort</th>
+								<td>
+									<label for="UShortIsIntegral">
+										<input type="checkbox" id="UShortIsIntegral" name="UShortIsIntegral" checked="checked" title="Is an integral" value="true" disabled="disabled" />
+										<input type="hidden" id="HdnUShortIsIntegral" name="UShortIsIntegral" value="false" />
+									</label>
+								</td>
+								<td>
+									<label for="UShortIsBuiltIn">
+										<input type="checkbox" id="UShortIsBuiltIn" name="UShortIsBuiltIn" checked="checked" title="Is a built-in" value="true" disabled="disabled" />
+										<input type="hidden" id="HdnUShortIsBuiltIn" name="UShortIsBuiltIn" value="false" />
+									</label>
+								</td>
+								<td>
+									<label for="UShortIsIntegrated">
+										<input type="checkbox" id="UShortIsIntegrated" name="UShortIsIntegrated" checked="checked" title="Is an integrated" value="true" disabled="disabled" />
+										<input type="hidden" id="HdnUShortIsIntegrated" name="UShortIsIntegrated" value="false" />
+									</label>
+								</td>
+								<td>
+									<label for="UShortIsNullable">
+										<input type="checkbox" id="UShortIsNullable" name="UShortIsNullable" title="Is a nullable" value="true" disabled="disabled" />
+										<input type="hidden" id="HdnUShortIsNullable" name="UShortIsNullable" value="false" />
+									</label>
+								</td>
+								<td>
+									<label for="UShortIsPositive">
+										<input type="checkbox" id="UShortIsPositive" name="UShortIsPositive" checked="checked" title="Is a positive" value="true" disabled="disabled" />
+										<input type="hidden" id="HdnUShortIsPositive" name="UShortIsPositive" value="false" />
+									</label>
+								</td>
+								<td>
+									<label for="UShortIsNegative">
+										<input type="checkbox" id="UShortIsNegative" name="UShortIsNegative" title="Is a negative" value="true" disabled="disabled" />
+										<input type="hidden" id="HdnUShortIsNegative" name="UShortIsNegative" value="false" />
+									</label>
+								</td>
+								<td>
+									<label for="UShortIsStack">
+										<input type="checkbox" id="UShortIsStack" name="UShortIsStack" checked="checked" title="Is a stack" value="true" disabled="disabled" />
+										<input type="hidden" id="HdnUShortIsStack" name="UShortIsStack" value="false" />
+									</label>
+								</td>
+								<td>
+									<label for="UShortIsHeap">
+										<input type="checkbox" id="UShortIsHeap" name="UShortIsHeap" title="Is a heap" value="true" disabled="disabled" />
+										<input type="hidden" id="HdnUShortIsHeap" name="UShortIsHeap" value="false" />
+									</label>
+								</td>
+								<td>
+									<label for="UShortIsStruct">
+										<input type="checkbox" id="UShortIsStruct" name="UShortIsStruct" checked="checked" title="Is a struct" value="true" disabled="disabled" />
+										<input type="hidden" id="HdnUShortIsStruct" name="UShortIsStruct" value="false" />
+									</label>
+								</td>
+							</tr>
+							<tr>
+								<th>Int32</th>
+								<th>int</th>
+								<td>
+									<label for="IntIsIntegral">
+										<input type="checkbox" id="IntIsIntegral" name="IntIsIntegral" checked="checked" title="Is an integral" value="true" disabled="disabled" />
+										<input type="hidden" id="HdnIntIsIntegral" name="IntIsIntegral" value="false" />
+									</label>
+								</td>
+								<td>
+									<label for="IntIsBuiltIn">
+										<input type="checkbox" id="IntIsBuiltIn" name="IntIsBuiltIn" checked="checked" title="Is a built-in" value="true" disabled="disabled" />
+										<input type="hidden" id="HdnIntIsBuiltIn" name="IntIsBuiltIn" value="false" />
+									</label>
+								</td>
+								<td>
+									<label for="IntIsIntegrated">
+										<input type="checkbox" id="IntIsIntegrated" name="IntIsIntegrated" checked="checked" title="Is an integrated" value="true" disabled="disabled" />
+										<input type="hidden" id="HdnIntIsIntegrated" name="IntIsIntegrated" value="false" />
+									</label>
+								</td>
+								<td>
+									<label for="IntIsNullable">
+										<input type="checkbox" id="IntIsNullable" name="IntIsNullable" title="Is a nullable" value="true" disabled="disabled" />
+										<input type="hidden" id="HdnIntIsNullable" name="IntIsNullable" value="false" />
+									</label>
+								</td>
+								<td>
+									<label for="IntIsPositive">
+										<input type="checkbox" id="IntIsPositive" name="IntIsPositive" checked="checked" title="Is a positive" value="true" disabled="disabled" />
+										<input type="hidden" id="HdnIntIsPositive" name="IntIsPositive" value="false" />
+									</label>
+								</td>
+								<td>
+									<label for="IntIsNegative">
+										<input type="checkbox" id="IntIsNegative" name="IntIsNegative" checked="checked" title="Is a negative" value="true" disabled="disabled" />
+										<input type="hidden" id="HdnIntIsNegative" name="IntIsNegative" value="false" />
+									</label>
+								</td>
+								<td>
+									<label for="IntIsStack">
+										<input type="checkbox" id="IntIsStack" name="IntIsStack" checked="checked" title="Is a stack" value="true" disabled="disabled" />
+										<input type="hidden" id="HdnIntIsStack" name="IntIsStack" value="false" />
+									</label>
+								</td>
+								<td>
+									<label for="IntIsHeap">
+										<input type="checkbox" id="IntIsHeap" name="IntIsHeap" title="Is a heap" value="true" disabled="disabled" />
+										<input type="hidden" id="HdnIntIsHeap" name="IntIsHeap" value="false" />
+									</label>
+								</td>
+								<td>
+									<label for="IntIsStruct">
+										<input type="checkbox" id="IntIsStruct" name="IntIsStruct" checked="checked" title="Is a struct" value="true" disabled="disabled" />
+										<input type="hidden" id="HdnIntIsStruct" name="IntIsStruct" value="false" />
+									</label>
+								</td>
+							</tr>
+							<tr>
+								<th>UInt32</th>
+								<th>uint</th>
+								<td>
+									<label for="UIntIsIntegral">
+										<input type="checkbox" id="UIntIsIntegral" name="UIntIsIntegral" checked="checked" title="Is an integral" value="true" disabled="disabled" />
+										<input type="hidden" id="HdnUIntIsIntegral" name="UIntIsIntegral" value="false" />
+									</label>
+								</td>
+								<td>
+									<label for="UIntIsBuiltIn">
+										<input type="checkbox" id="UIntIsBuiltIn" name="UIntIsBuiltIn" checked="checked" title="Is a built-in" value="true" disabled="disabled" />
+										<input type="hidden" id="HdnUIntIsBuiltIn" name="UIntIsBuiltIn" value="false" />
+									</label>
+								</td>
+								<td>
+									<label for="UIntIsIntegrated">
+										<input type="checkbox" id="UIntIsIntegrated" name="UIntIsIntegrated" checked="checked" title="Is an integrated" value="true" disabled="disabled" />
+										<input type="hidden" id="HdnUIntIsIntegrated" name="UIntIsIntegrated" value="false" />
+									</label>
+								</td>
+								<td>
+									<label for="UIntIsNullable">
+										<input type="checkbox" id="UIntIsNullable" name="UIntIsNullable" title="Is a nullable" value="true" disabled="disabled" />
+										<input type="hidden" id="HdnUIntIsNullable" name="UIntIsNullable" value="false" />
+									</label>
+								</td>
+								<td>
+									<label for="UIntIsPositive">
+										<input type="checkbox" id="UIntIsPositive" name="UIntIsPositive" checked="checked" title="Is a positive" value="true" disabled="disabled" />
+										<input type="hidden" id="HdnUIntIsPositive" name="UIntIsPositive" value="false" />
+									</label>
+								</td>
+								<td>
+									<label for="UIntIsNegative">
+										<input type="checkbox" id="UIntIsNegative" name="UIntIsNegative" title="Is a negative" value="true" disabled="disabled" />
+										<input type="hidden" id="HdnUIntIsNegative" name="UIntIsNegative" value="false" />
+									</label>
+								</td>
+								<td>
+									<label for="UIntIsStack">
+										<input type="checkbox" id="UIntIsStack" name="UIntIsStack" checked="checked" title="Is a stack" value="true" disabled="disabled" />
+										<input type="hidden" id="HdnUIntIsStack" name="UIntIsStack" value="false" />
+									</label>
+								</td>
+								<td>
+									<label for="UIntIsHeap">
+										<input type="checkbox" id="UIntIsHeap" name="UIntIsHeap" title="Is a heap" value="true" disabled="disabled" />
+										<input type="hidden" id="HdnUIntIsHeap" name="UIntIsHeap" value="false" />
+									</label>
+								</td>
+								<td>
+									<label for="UIntIsStruct">
+										<input type="checkbox" id="UIntIsStruct" name="UIntIsStruct" checked="checked" title="Is a struct" value="true" disabled="disabled" />
+										<input type="hidden" id="HdnUIntIsStruct" name="UIntIsStruct" value="false" />
+									</label>
+								</td>
+							</tr>
+							<tr>
+								<th>Int64</th>
+								<th>long</th>
+								<td>
+									<label for="LongIsIntegral">
+										<input type="checkbox" id="LongIsIntegral" name="LongIsIntegral" checked="checked" title="Is an integral" value="true" disabled="disabled" />
+										<input type="hidden" id="HdnLongIsIntegral" name="LongIsIntegral" value="false" />
+									</label>
+								</td>
+								<td>
+									<label for="LongIsBuiltIn">
+										<input type="checkbox" id="LongIsBuiltIn" name="LongIsBuiltIn" checked="checked" title="Is a built-in" value="true" disabled="disabled" />
+										<input type="hidden" id="HdnLongIsBuiltIn" name="LongIsBuiltIn" value="false" />
+									</label>
+								</td>
+								<td>
+									<label for="LongIsIntegrated">
+										<input type="checkbox" id="LongIsIntegrated" name="LongIsIntegrated" checked="checked" title="Is an integrated" value="true" disabled="disabled" />
+										<input type="hidden" id="HdnLongIsIntegrated" name="LongIsIntegrated" value="false" />
+									</label>
+								</td>
+								<td>
+									<label for="LongIsNullable">
+										<input type="checkbox" id="LongIsNullable" name="LongIsNullable" title="Is a nullable" value="true" disabled="disabled" />
+										<input type="hidden" id="HdnLongIsNullable" name="LongIsNullable" value="false" />
+									</label>
+								</td>
+								<td>
+									<label for="LongIsPositive">
+										<input type="checkbox" id="LongIsPositive" name="LongIsPositive" checked="checked" title="Is a positive" value="true" disabled="disabled" />
+										<input type="hidden" id="HdnLongIsPositive" name="LongIsPositive" value="false" />
+									</label>
+								</td>
+								<td>
+									<label for="LongIsNegative">
+										<input type="checkbox" id="LongIsNegative" name="LongIsNegative" checked="checked" title="Is a negative" value="true" disabled="disabled" />
+										<input type="hidden" id="HdnLongIsNegative" name="LongIsNegative" value="false" />
+									</label>
+								</td>
+								<td>
+									<label for="LongIsStack">
+										<input type="checkbox" id="LongIsStack" name="LongIsStack" checked="checked" title="Is a stack" value="true" disabled="disabled" />
+										<input type="hidden" id="HdnLongIsStack" name="LongIsStack" value="false" />
+									</label>
+								</td>
+								<td>
+									<label for="LongIsHeap">
+										<input type="checkbox" id="LongIsHeap" name="LongIsHeap" title="Is a heap" value="true" disabled="disabled" />
+										<input type="hidden" id="HdnLongIsHeap" name="LongIsHeap" value="false" />
+									</label>
+								</td>
+								<td>
+									<label for="LongIsStruct">
+										<input type="checkbox" id="LongIsStruct" name="LongIsStruct" checked="checked" title="Is a struct" value="true" disabled="disabled" />
+										<input type="hidden" id="HdnLongIsStruct" name="LongIsStruct" value="false" />
+									</label>
+								</td>
+							</tr>
+							<tr>
+								<th>UInt64</th>
+								<th>ulong</th>
+								<td>
+									<label for="ULongIsIntegral">
+										<input type="checkbox" id="ULongIsIntegral" name="ULongIsIntegral" checked="checked" title="Is an integral" value="true" disabled="disabled" />
+										<input type="hidden" id="HdnULongIsIntegral" name="ULongIsIntegral" value="false" />
+									</label>
+								</td>
+								<td>
+									<label for="ULongIsBuiltIn">
+										<input type="checkbox" id="ULongIsBuiltIn" name="ULongIsBuiltIn" checked="checked" title="Is a built-in" value="true" disabled="disabled" />
+										<input type="hidden" id="HdnULongIsBuiltIn" name="ULongIsBuiltIn" value="false" />
+									</label>
+								</td>
+								<td>
+									<label for="ULongIsIntegrated">
+										<input type="checkbox" id="ULongIsIntegrated" name="ULongIsIntegrated" checked="checked" title="Is an integrated" value="true" disabled="disabled" />
+										<input type="hidden" id="HdnULongIsIntegrated" name="ULongIsIntegrated" value="false" />
+									</label>
+								</td>
+								<td>
+									<label for="ULongIsNullable">
+										<input type="checkbox" id="ULongIsNullable" name="ULongIsNullable" title="Is a nullable" value="true" disabled="disabled" />
+										<input type="hidden" id="HdnULongIsNullable" name="ULongIsNullable" value="false" />
+									</label>
+								</td>
+								<td>
+									<label for="ULongIsPositive">
+										<input type="checkbox" id="ULongIsPositive" name="ULongIsPositive" checked="checked" title="Is a positive" value="true" disabled="disabled" />
+										<input type="hidden" id="HdnULongIsPositive" name="ULongIsPositive" value="false" />
+									</label>
+								</td>
+								<td>
+									<label for="ULongIsNegative">
+										<input type="checkbox" id="ULongIsNegative" name="ULongIsNegative" title="Is a negative" value="true" disabled="disabled" />
+										<input type="hidden" id="HdnULongIsNegative" name="ULongIsNegative" value="false" />
+									</label>
+								</td>
+								<td>
+									<label for="ULongIsStack">
+										<input type="checkbox" id="ULongIsStack" name="ULongIsStack" checked="checked" title="Is a stack" value="true" disabled="disabled" />
+										<input type="hidden" id="HdnULongIsStack" name="ULongIsStack" value="false" />
+									</label>
+								</td>
+								<td>
+									<label for="ULongIsHeap">
+										<input type="checkbox" id="ULongIsHeap" name="ULongIsHeap" title="Is a heap" value="true" disabled="disabled" />
+										<input type="hidden" id="HdnULongIsHeap" name="ULongIsHeap" value="false" />
+									</label>
+								</td>
+								<td>
+									<label for="ULongIsStruct">
+										<input type="checkbox" id="ULongIsStruct" name="ULongIsStruct" checked="checked" title="Is a struct" value="true" disabled="disabled" />
+										<input type="hidden" id="HdnULongIsStruct" name="ULongIsStruct" value="false" />
+									</label>
+								</td>
+							</tr>
+							<tr>
+								<th>Decimal</th>
+								<th>decimal</th>
+								<td>
+									<label for="DecimalIsIntegral">
+										<input type="checkbox" id="DecimalIsIntegral" name="DecimalIsIntegral" title="Is an integral" value="true" disabled="disabled" />
+										<input type="hidden" id="HdnDecimalIsIntegral" name="DecimalIsIntegral" value="false" />
+									</label>
+								</td>
+								<td>
+									<label for="DecimalIsBuiltIn">
+										<input type="checkbox" id="DecimalIsBuiltIn" name="DecimalIsBuiltIn" checked="checked" title="Is a built-in" value="true" disabled="disabled" />
+										<input type="hidden" id="HdnDecimalIsBuiltIn" name="DecimalIsBuiltIn" value="false" />
+									</label>
+								</td>
+								<td>
+									<label for="DecimalIsIntegrated">
+										<input type="checkbox" id="DecimalIsIntegrated" name="DecimalIsIntegrated" checked="checked" title="Is an integrated" value="true" disabled="disabled" />
+										<input type="hidden" id="HdnDecimalIsIntegrated" name="DecimalIsIntegrated" value="false" />
+									</label>
+								</td>
+								<td>
+									<label for="DecimalIsNullable">
+										<input type="checkbox" id="DecimalIsNullable" name="DecimalIsNullable" title="Is a nullable" value="true" disabled="disabled" />
+										<input type="hidden" id="HdnDecimalIsNullable" name="DecimalIsNullable" value="false" />
+									</label>
+								</td>
+								<td>
+									<label for="DecimalIsPositive">
+										<input type="checkbox" id="DecimalIsPositive" name="DecimalIsPositive" checked="checked" title="Is a positive" value="true" disabled="disabled" />
+										<input type="hidden" id="HdnDecimalIsPositive" name="DecimalIsPositive" value="false" />
+									</label>
+								</td>
+								<td>
+									<label for="DecimalIsNegative">
+										<input type="checkbox" id="DecimalIsNegative" name="DecimalIsNegative" checked="checked" title="Is a negative" value="true" disabled="disabled" />
+										<input type="hidden" id="HdnDecimalIsNegative" name="DecimalIsNegative" value="false" />
+									</label>
+								</td>
+								<td>
+									<label for="DecimalIsStack">
+										<input type="checkbox" id="DecimalIsStack" name="DecimalIsStack" checked="checked" title="Is a stack" value="true" disabled="disabled" />
+										<input type="hidden" id="HdnDecimalIsStack" name="DecimalIsStack" value="false" />
+									</label>
+								</td>
+								<td>
+									<label for="DecimalIsHeap">
+										<input type="checkbox" id="DecimalIsHeap" name="DecimalIsHeap" title="Is a heap" value="true" disabled="disabled" />
+										<input type="hidden" id="HdnDecimalIsHeap" name="DecimalIsHeap" value="false" />
+									</label>
+								</td>
+								<td>
+									<label for="DecimalIsStruct">
+										<input type="checkbox" id="DecimalIsStruct" name="DecimalIsStruct" checked="checked" title="Is a struct" value="true" disabled="disabled" />
+										<input type="hidden" id="HdnDecimalIsStruct" name="DecimalIsStruct" value="false" />
+									</label>
+								</td>
+							</tr>
+							<tr>
+								<th>Double</th>
+								<th>double</th>
+								<td>
+									<label for="DoubleIsIntegral">
+										<input type="checkbox" id="DoubleIsIntegral" name="DoubleIsIntegral" title="Is an integral" value="true" disabled="disabled" />
+										<input type="hidden" id="HdnDoubleIsIntegral" name="DoubleIsIntegral" value="false" />
+									</label>
+								</td>
+								<td>
+									<label for="DoubleIsBuiltIn">
+										<input type="checkbox" id="DoubleIsBuiltIn" name="DoubleIsBuiltIn" checked="checked" title="Is a built-in" value="true" disabled="disabled" />
+										<input type="hidden" id="HdnDoubleIsBuiltIn" name="DoubleIsBuiltIn" value="false" />
+									</label>
+								</td>
+								<td>
+									<label for="DoubleIsIntegrated">
+										<input type="checkbox" id="DoubleIsIntegrated" name="DoubleIsIntegrated" checked="checked" title="Is an integrated" value="true" disabled="disabled" />
+										<input type="hidden" id="HdnDoubleIsIntegrated" name="DoubleIsIntegrated" value="false" />
+									</label>
+								</td>
+								<td>
+									<label for="DoubleIsNullable">
+										<input type="checkbox" id="DoubleIsNullable" name="DoubleIsNullable" title="Is a nullable" value="true" disabled="disabled" />
+										<input type="hidden" id="HdnDoubleIsNullable" name="DoubleIsNullable" value="false" />
+									</label>
+								</td>
+								<td>
+									<label for="DoubleIsPositive">
+										<input type="checkbox" id="DoubleIsPositive" name="DoubleIsPositive" checked="checked" title="Is a positive" value="true" disabled="disabled" />
+										<input type="hidden" id="HdnDoubleIsPositive" name="DoubleIsPositive" value="false" />
+									</label>
+								</td>
+								<td>
+									<label for="DoubleIsNegative">
+										<input type="checkbox" id="DoubleIsNegative" name="DoubleIsNegative" checked="checked" title="Is a negative" value="true" disabled="disabled" />
+										<input type="hidden" id="HdnDoubleIsNegative" name="DoubleIsNegative" value="false" />
+									</label>
+								</td>
+								<td>
+									<label for="DoubleIsStack">
+										<input type="checkbox" id="DoubleIsStack" name="DoubleIsStack" checked="checked" title="Is a stack" value="true" disabled="disabled" />
+										<input type="hidden" id="HdnDoubleIsStack" name="DoubleIsStack" value="false" />
+									</label>
+								</td>
+								<td>
+									<label for="DoubleIsHeap">
+										<input type="checkbox" id="DoubleIsHeap" name="DoubleIsHeap" title="Is a heap" value="true" disabled="disabled" />
+										<input type="hidden" id="HdnDoubleIsHeap" name="DoubleIsHeap" value="false" />
+									</label>
+								</td>
+								<td>
+									<label for="DoubleIsStruct">
+										<input type="checkbox" id="DoubleIsStruct" name="DoubleIsStruct" checked="checked" title="Is a struct" value="true" disabled="disabled" />
+										<input type="hidden" id="HdnDoubleIsStruct" name="DoubleIsStruct" value="false" />
+									</label>
+								</td>
+							</tr>
+							<tr>
+								<th>Single</th>
+								<th>float</th>
+								<td>
+									<label for="FloatIsIntegral">
+										<input type="checkbox" id="FloatIsIntegral" name="FloatIsIntegral" title="Is an integral" value="true" disabled="disabled" />
+										<input type="hidden" id="HdnFloatIsIntegral" name="FloatIsIntegral" value="false" />
+									</label>
+								</td>
+								<td>
+									<label for="FloatIsBuiltIn">
+										<input type="checkbox" id="FloatIsBuiltIn" name="FloatIsBuiltIn" checked="checked" title="Is a built-in" value="true" disabled="disabled" />
+										<input type="hidden" id="HdnFloatIsBuiltIn" name="FloatIsBuiltIn" value="false" />
+									</label>
+								</td>
+								<td>
+									<label for="FloatIsIntegrated">
+										<input type="checkbox" id="FloatIsIntegrated" name="FloatIsIntegrated" checked="checked" title="Is an integrated" value="true" disabled="disabled" />
+										<input type="hidden" id="HdnFloatIsIntegrated" name="FloatIsIntegrated" value="false" />
+									</label>
+								</td>
+								<td>
+									<label for="FloatIsNullable">
+										<input type="checkbox" id="FloatIsNullable" name="FloatIsNullable" title="Is a nullable" value="true" disabled="disabled" />
+										<input type="hidden" id="HdnFloatIsNullable" name="FloatIsNullable" value="false" />
+									</label>
+								</td>
+								<td>
+									<label for="FloatIsPositive">
+										<input type="checkbox" id="FloatIsPositive" name="FloatIsPositive" checked="checked" title="Is a positive" value="true" disabled="disabled" />
+										<input type="hidden" id="HdnFloatIsPositive" name="FloatIsPositive" value="false" />
+									</label>
+								</td>
+								<td>
+									<label for="FloatIsNegative">
+										<input type="checkbox" id="FloatIsNegative" name="FloatIsNegative" checked="checked" title="Is a negative" value="true" disabled="disabled" />
+										<input type="hidden" id="HdnFloatIsNegative" name="FloatIsNegative" value="false" />
+									</label>
+								</td>
+								<td>
+									<label for="FloatIsStack">
+										<input type="checkbox" id="FloatIsStack" name="FloatIsStack" checked="checked" title="Is a stack" value="true" disabled="disabled" />
+										<input type="hidden" id="HdnFloatIsStack" name="FloatIsStack" value="false" />
+									</label>
+								</td>
+								<td>
+									<label for="FloatIsHeap">
+										<input type="checkbox" id="FloatIsHeap" name="FloatIsHeap" title="Is a heap" value="true" disabled="disabled" />
+										<input type="hidden" id="HdnFloatIsHeap" name="FloatIsHeap" value="false" />
+									</label>
+								</td>
+								<td>
+									<label for="FloatIsStruct">
+										<input type="checkbox" id="FloatIsStruct" name="FloatIsStruct" checked="checked" title="Is a struct" value="true" disabled="disabled" />
+										<input type="hidden" id="HdnFloatIsStruct" name="FloatIsStruct" value="false" />
+									</label>
+								</td>
+							</tr>
+						</tbody>
+
+					</table>
+				</section>
+				<section>
+					<table>
+						<tfoot>
+							<tr>
+								<td id="empty"></td>
+								<td id="get_button">
+									<label for="get">
+										<input type="submit" name="getHyperlinks" class="get" id="get" formaction="http://www.w3schools.com/" formmethod="get" title="get" value="get" />
+									</label>
+								</td>
+								<td id="post_button">
+									<label for="post">
+										<input type="submit" name="postHyperlinks" class="post" id="post" formaction="http://www.w3schools.com/" formmethod="post" title="post" value="post" />
+									</label>
+								</td>
+							</tr>
+						</tfoot>
+					</table>
+				</section>
+			</form>
+		</main>
+	</div>
+</body>
+</html>

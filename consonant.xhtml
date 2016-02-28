@@ -1,0 +1,28 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<link rel="icon" href="content/imgs/speaker.png" />
+	<link rel="prev" href="vowel.xhtml" />
+	<script src="scripts/jquery.js"></script>
+	<script src="scripts/create_svg.js"></script>
+	<script src="scripts/sound.js"></script>
+	<title>Consonant chart</title>
+</head>
+<body>
+	<ul>
+		<li><a href="main.xhtml"><img title="Main" class="home_button" src="content/imgs/home_button.png" /></a></li>
+	</ul>
+	<img class="guitar" title="Guitar" src="content/imgs/guitar.png" />
+	<canvas id="line_first" class="first" width="60" height="360" onclick="canvas()"></canvas>
+	<canvas id="line_second" class="second" width="60" height="360" onclick="canvas()"></canvas>
+	<canvas id="line_third" class="third" width="60" height="360" onclick="canvas()"></canvas>
+	<canvas id="line_fourth" class="fourth" width="60" height="360" onclick="canvas()"></canvas>
+
+	<script src="scripts/extensions.js"></script>
+	<script src="scripts/audio.js"></script>
+	<script src="scripts/create_consonant.js"></script>
+	<script src="scripts/main.js"></script>
+
+	<audio id="canvas" src="content/audio/canvas.mp3"></audio>
+</body>
+</html>
